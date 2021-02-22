@@ -8,17 +8,16 @@ locale-gen
 
 ln -sf /usr/share/zoneinfo/America/Argentina/Buenos_Aires /etc/localtime
 
-pacman --noconfirm --needed -S broadcom-wl networkmanager xorg-server xorg-xinit xf86-video-intel xorg-xsetroot xorg-setxkbmap
+pacman --noconfirm --needed -S broadcom-wl networkmanager xorg-server xorg-xinit xf86-video-intel
 
 systemctl enable NetworkManager
 
 pacman --noconfirm --needed -S grub && grub-install --target=i386-pc /dev/sda && grub-mkconfig -o /boot/grub/grub.cfg
 
-pacman --noconfirm --needed -S zsh xorg-xbacklight pamixer sxiv git gvfs xdg-user-dirs ntfs-3g zip unzip xwallpaper picom
+pacman --noconfirm --needed -S git gvfs ntfs-3g zip unzip
 
-pacman --noconfirm --needed -S htop neofetch pulseaudio pulsemixer vim ranger gnu-free-fonts dmenu ueberzug
+pacman --noconfirm --needed -S pulseaudio vim ranger gnu-free-fonts xfce4
 
-curl -O https://raw.githubusercontent.com/SMhub1975/arch/master/30-touchpad.conf
 curl -O https://raw.githubusercontent.com/SMhub1975/arch/master/00-keyboard.conf
 
 cat <<-'EOF'
