@@ -50,7 +50,7 @@ mount /dev/sda1 /mnt/boot
 mkdir -p /mnt/home
 mount /dev/sda4 /mnt/home
 
-pacstrap /mnt base base-devel
+pacstrap /mnt base base-devel linux
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
