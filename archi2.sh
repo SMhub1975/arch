@@ -8,7 +8,7 @@ locale-gen
 
 ln -sf /usr/share/zoneinfo/America/Argentina/Buenos_Aires /etc/localtime
 
-pacman --noconfirm --needed -S broadcom-wl networkmanager xorg-server xorg-xinit xf86-video-intel
+pacman --noconfirm --needed -S networkmanager xorg-server xorg-xinit xf86-video-intel
 
 systemctl enable NetworkManager
 
@@ -16,7 +16,9 @@ pacman --noconfirm --needed -S grub && grub-install --target=i386-pc /dev/sda &&
 
 pacman --noconfirm --needed -S git gvfs ntfs-3g zip unzip
 
-pacman --noconfirm --needed -S pulseaudio vim ranger gnu-free-fonts xfce4
+pacman --noconfirm --needed -S pulseaudio vim ranger gnu-free-fonts 
+
+pacman --noconfirm --needed -S volumeicon ristretto tumbler htop neofetch papirus-icon-theme arc-gtk-theme vlc engrampa galculator lxappearance thunar 
 
 curl -O https://raw.githubusercontent.com/SMhub1975/arch/master/00-keyboard.conf
 
