@@ -14,9 +14,9 @@ systemctl enable NetworkManager
 
 pacman --noconfirm --needed -S grub && grub-install --target=i386-pc /dev/sda && grub-mkconfig -o /boot/grub/grub.cfg
 
-# pacman --noconfirm --needed -S git gvfs ntfs-3g zip unzip
+pacman --noconfirm --needed -S git gvfs ntfs-3g zip unzip gnu-free-fonts vim
 
-# pacman --noconfirm --needed -S pulseaudio vim ranger gnu-free-fonts 
+# pacman --noconfirm --needed -S pulseaudio ranger
 
 # pacman --noconfirm --needed -S volumeicon ristretto tumbler htop neofetch papirus-icon-theme arc-gtk-theme vlc engrampa galculator lxappearance thunar 
 
